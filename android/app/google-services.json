@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6642596235",
+    "project_id": "exchange-rates-9d8f9",
+    "storage_bucket": "exchange-rates-9d8f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6642596235:android:8a5fa69c71864376fa578e",
+        "android_client_info": {
+          "package_name": "com.exchangerates.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNAUXpK5TB_hyWoIHyaC-xy780M-Bir4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
