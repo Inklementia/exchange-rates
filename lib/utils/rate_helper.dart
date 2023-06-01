@@ -17,4 +17,11 @@ class MyRateHelper {
 
     return randomValues;
   }
+
+  static List<double> generateRandomValues() {
+    Random random = Random();
+    List<double> randomValues =
+        List.generate(5, (_) => random.nextDouble() * 9 + 1);
+    return randomValues;
+  }
 }

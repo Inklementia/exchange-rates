@@ -1,1 +1,3 @@
-abstract class MyUrls {}
+abstract class MyUrls {
+  //
+}

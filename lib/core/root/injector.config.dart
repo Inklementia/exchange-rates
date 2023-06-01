@@ -12,8 +12,10 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
+import '../../feature/currency_list/redux/service.dart' as _i6;
+import '../../feature/currency_list/redux/store.dart' as _i4;
 import '../repository/currency_repository.dart' as _i3;
-import 'navigator_service.dart' as _i4;
+import 'navigator_service.dart' as _i5;
 
 extension GetItInjectableX on _i1.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -27,7 +29,10 @@ extension GetItInjectableX on _i1.GetIt {
       environmentFilter,
     );
     gh.factory<_i3.CurrencyRepository>(() => _i3.CurrencyRepository());
-    gh.singleton<_i4.NavigatorService>(_i4.NavigatorService());
+    gh.singleton<_i4.CurrencyStore>(_i4.CurrencyStore());
+    gh.singleton<_i5.NavigatorService>(_i5.NavigatorService());
+    gh.singleton<_i6.CurrencyService>(
+        _i6.CurrencyService(gh<_i4.CurrencyStore>()));
     return this;
   }
 }

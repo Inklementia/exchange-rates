@@ -2,7 +2,6 @@
 import 'package:exchangerates/core/models/currency/currency.dart';
 import 'package:exchangerates/core/repository/currency_repository.dart';
 import 'package:exchangerates/core/root/injector.dart';
-import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:mobx/mobx.dart';
 
 // Project imports:

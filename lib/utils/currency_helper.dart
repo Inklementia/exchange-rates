@@ -1,6 +1,6 @@
 class MyCurrencyHelper {
   //
-  static String getFlagFromCurrencyCode(String currencyCode) {
+  static String getFlagFromCode(String currencyCode) {
     int flagOffset = 0x1F1E6;
     int asciiOffset = 0x41;
 

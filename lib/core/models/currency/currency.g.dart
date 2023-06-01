@@ -85,15 +85,15 @@ extension $CurrencyCopyWith on Currency {
 
 Currency _$CurrencyFromJson(Map<String, dynamic> json) => Currency(
       code: json['code'] as String? ?? '',
-      exchangeRates: json['exchangeRates'] == null
-          ? []
-          : Currency._exchangeRatesFromJson(
-              json['exchangeRates'] as List<double>),
+      exchangeRates: (json['rates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList() ??
+          [],
       description: json['description'] as String? ?? '',
     );
 
 Map<String, dynamic> _$CurrencyToJson(Currency instance) => <String, dynamic>{
       'code': instance.code,
       'description': instance.description,
-      'exchangeRates': instance.exchangeRates,
+      'rates': instance.exchangeRates,
     };
