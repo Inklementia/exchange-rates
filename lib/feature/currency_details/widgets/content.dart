@@ -21,7 +21,7 @@ class CurrencyDetailsContent extends StatelessWidget {
 
     return Observer(
       builder: (_) {
-        final model = store.model!;
+        final model = store.currency!;
 
         return ListView(
           padding: MyEdgeInsets.h20,

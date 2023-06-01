@@ -38,8 +38,8 @@ class _CurrencyDetailsScreenState extends State<CurrencyDetailsScreen> {
         child: Observer(
           builder: (_) {
             final isLoading = store.isLoading;
-            if (isLoading) return CurrencyDetailsLoadingState();
 
+            if (isLoading) return CurrencyDetailsLoadingState();
             return CurrencyDetailsContent();
           },
         ),

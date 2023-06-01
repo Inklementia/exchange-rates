@@ -80,6 +80,13 @@ class CurrencyDetailsChart extends StatelessWidget {
                   ),
                 ),
               ),
+              lineTouchData: LineTouchData(
+                touchTooltipData: LineTouchTooltipData(
+                  tooltipBgColor: MyColors.white,
+                  tooltipBorder: BorderSide(color: MyColors.grey),
+                  tooltipRoundedRadius: 0,
+                ),
+              ),
             ),
 
             swapAnimationDuration: Duration(milliseconds: 150), // Optional

@@ -13,14 +13,8 @@ class SettingsLocationToggle extends StatelessWidget {
     return Observer(
       builder: (_) {
         return MyCupertinoToggle(
-          isActive: store.isActive,
-          onChanged: (value) {
-            store.setIsActive(value);
-            if (value)
-              store.startLocationTracking();
-            else
-              store.stopLocationTracking();
-          },
+          isActive: store.isLocationEnabled,
+          onChanged: store.setIsLocationEnabled,
         );
       },
     );

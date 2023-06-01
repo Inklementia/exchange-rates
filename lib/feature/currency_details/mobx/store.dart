@@ -26,7 +26,7 @@ abstract class _CurrencyDetailsStore with Store {
   //
 
   @observable
-  Currency? model;
+  Currency? currency;
 
   //
 
@@ -62,5 +62,5 @@ abstract class _CurrencyDetailsStore with Store {
   //
 
   @action
-  void setCurrency(Currency value) => model = value;
+  void setCurrency(Currency value) => currency = value;
 }

@@ -7,7 +7,6 @@ import 'package:exchangerates/core/navigator/routes_constants.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/utils/media_helper.dart';
 import 'package:exchangerates/utils/my_scroll_behavior.dart';
-import 'package:exchangerates/utils/permission_helper.dart';
 import 'package:flutter/material.dart';
 
 // Project imports:
@@ -26,13 +25,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
   @override
   void initState() {
     WidgetsBinding.instance.addObserver(this);
-    MyPermissionHelper.checkAll();
     super.initState();
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) MyPermissionHelper.checkAll();
   }
 
   void dispose() {

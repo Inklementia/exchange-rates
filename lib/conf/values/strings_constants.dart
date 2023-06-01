@@ -12,6 +12,8 @@ abstract class MyStrings {
   static String get emptyCurrencyList => 'List of currencies is empty';
   static String get settings => 'Settings';
   static String get trackLocation => 'Track Location';
+  static String get noPermissionToUseLocation =>
+      'No permission to use location';
 
   static String get stats => 'Stats';
 

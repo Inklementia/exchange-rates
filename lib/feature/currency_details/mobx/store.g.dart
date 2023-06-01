@@ -25,19 +25,19 @@ mixin _$CurrencyDetailsStore on _CurrencyDetailsStore, Store {
     });
   }
 
-  late final _$modelAtom =
-      Atom(name: '_CurrencyDetailsStore.model', context: context);
+  late final _$currencyAtom =
+      Atom(name: '_CurrencyDetailsStore.currency', context: context);
 
   @override
-  Currency? get model {
-    _$modelAtom.reportRead();
-    return super.model;
+  Currency? get currency {
+    _$currencyAtom.reportRead();
+    return super.currency;
   }
 
   @override
-  set model(Currency? value) {
-    _$modelAtom.reportWrite(value, super.model, () {
-      super.model = value;
+  set currency(Currency? value) {
+    _$currencyAtom.reportWrite(value, super.currency, () {
+      super.currency = value;
     });
   }
 
@@ -70,7 +70,7 @@ mixin _$CurrencyDetailsStore on _CurrencyDetailsStore, Store {
   String toString() {
     return '''
 isLoading: ${isLoading},
-model: ${model}
+currency: ${currency}
     ''';
   }
 }

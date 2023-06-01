@@ -2,11 +2,13 @@ import 'dart:async';
 
 import 'package:chopper/chopper.dart';
 import 'package:exchangerates/core/models/currency/currency.dart';
+import 'package:exchangerates/core/models/location/location.dart';
 
 typedef JsonFactory<T> = T Function(Map<String, dynamic> json);
 
 const factories = const {
   Currency: Currency.fromJson,
+  MyLocation: MyLocation.fromJson,
   //
 };
 
