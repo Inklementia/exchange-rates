@@ -12,6 +12,8 @@ class MyContainer extends StatelessWidget {
 
   final AlignmentGeometry? alignment;
 
+  final bool hideOverflow;
+
   final Color? color;
   final Gradient? gradient;
   final BoxShape shape;
@@ -31,6 +33,7 @@ class MyContainer extends StatelessWidget {
     this.margin,
     this.padding,
     this.alignment,
+    this.hideOverflow = false,
     //
     this.gradient,
     this.color,
@@ -51,6 +54,7 @@ class MyContainer extends StatelessWidget {
       margin: margin,
       padding: padding,
       alignment: alignment,
+      clipBehavior: hideOverflow ? Clip.hardEdge : Clip.none,
       decoration: BoxDecoration(
         gradient: gradient,
         color: color,

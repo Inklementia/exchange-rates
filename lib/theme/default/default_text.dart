@@ -32,7 +32,7 @@ class MyText extends StatelessWidget {
     this.fontSize = 14,
     this.letterSpacing,
     //
-    this.color = MyColors.navi,
+    this.color = MyColors.greyDark,
     //
     this.maxLines,
     this.textAlign,
@@ -53,7 +53,7 @@ class MyText extends StatelessWidget {
     return Text(
       toUpperCase ? data!.toUpperCase() : data!,
       style: TextStyle(
-        color: color ?? MyColors.navi,
+        color: color ?? MyColors.greyDark,
         fontWeight: fontWeight,
         decoration: decoration,
         fontFamily: MyFonts.main,

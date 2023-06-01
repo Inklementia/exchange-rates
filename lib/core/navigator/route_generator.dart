@@ -2,6 +2,7 @@
 import 'package:exchangerates/feature/currency_details/currency_details_screen.dart';
 import 'package:exchangerates/feature/currency_list/currency_list_screen.dart';
 import 'package:exchangerates/feature/error/error_screen.dart';
+import 'package:exchangerates/feature/settings/settings_screen.dart';
 import 'package:exchangerates/feature/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -81,6 +82,12 @@ class RouteGenerator {
             CurrencyDetailsScreen(code: args),
           );
         return _errorRoute();
+
+      case MyRoutes.settings:
+        return route(
+          settings.name,
+          SettingsScreen(),
+        );
 
       default:
         return _errorRoute();

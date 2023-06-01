@@ -1,16 +1,17 @@
-// Package imports:
 import 'package:copy_with_extension/copy_with_extension.dart';
-import 'package:exchangerates/utils/rate_helper.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'currency.g.dart';
 
 @CopyWith()
-@JsonSerializable(explicitToJson: false)
+@JsonSerializable(explicitToJson: true)
 class Currency {
   //
   @JsonKey(defaultValue: '')
   final String code;
+
+  @JsonKey(defaultValue: '')
+  final String? countryCode;
 
   @JsonKey(defaultValue: '')
   final String? description;
@@ -23,14 +24,9 @@ class Currency {
   Currency({
     required this.code,
     required this.exchangeRates,
+    this.countryCode,
     this.description,
   });
-
-  //
-
-  static List<double> _exchangeRatesFromJson(List<double> rates) {
-    return MyRateHelper.getRandomValues(rates, 5);
-  }
 
   //
 

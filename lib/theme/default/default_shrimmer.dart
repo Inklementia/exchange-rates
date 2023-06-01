@@ -1,4 +1,6 @@
 // Flutter imports:
+import 'package:exchangerates/conf/values/border_radius_constants.dart';
+import 'package:exchangerates/theme/default/default_container.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
@@ -22,10 +24,14 @@ class MyShrimmer extends StatelessWidget {
     return FractionallySizedBox(
       widthFactor: 1,
       child: Shimmer.fromColors(
-        baseColor: Colors.grey[300]!,
+        baseColor: Colors.grey[200]!,
         highlightColor: Colors.grey[100]!,
         direction: ShimmerDirection.ltr,
-        child: Container(height: height, color: MyColors.greyDark),
+        child: MyContainer(
+          height: height,
+          color: MyColors.grey,
+          borderRadius: MyBorderRadius.allRounded10,
+        ),
       ),
     );
   }

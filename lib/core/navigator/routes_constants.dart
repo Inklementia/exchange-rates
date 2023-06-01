@@ -11,4 +11,6 @@ abstract class MyRoutes {
 
   static const currencyList = 'currencyList';
   static const currencyDetails = 'currencyDetails';
+
+  static const settings = 'settings';
 }

@@ -13,6 +13,13 @@ CurrencyState currencyReducer(CurrencyState state, action) {
       action: action,
     );
 
+  if (action is UpdateCurrenciesRatesAction)
+    return CurrencyState(
+      list: state.list,
+      isLoading: true,
+      action: action,
+    );
+
   if (action is UpdateCurrenciesAction)
     return CurrencyState(
       list: action.list,

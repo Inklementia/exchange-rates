@@ -48,7 +48,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
         primaryColor: MyColors.primary,
         colorScheme: ColorScheme.light(
           primary: MyColors.primary,
-          secondary: MyColors.accent,
+          secondary: MyColors.secondary,
         ),
       ),
       //

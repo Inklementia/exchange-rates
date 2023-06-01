@@ -70,7 +70,7 @@ class MyButton extends StatelessWidget {
     //
     this.isLoading = false,
     this.enable = true,
-  }) : color = MyButtonColor.lite;
+  }) : color = MyButtonColor.secondary;
 
   @override
   Widget build(BuildContext context) {

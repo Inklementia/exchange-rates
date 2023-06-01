@@ -11,6 +11,8 @@ abstract class _$CurrencyCWProxy {
 
   Currency exchangeRates(List<double> exchangeRates);
 
+  Currency countryCode(String? countryCode);
+
   Currency description(String? description);
 
   /// This function **does support** nullification of nullable fields. All `null` values passed to `non-nullable` fields will be ignored. You can also use `Currency(...).copyWith.fieldName(...)` to override fields one at a time with nullification support.
@@ -22,6 +24,7 @@ abstract class _$CurrencyCWProxy {
   Currency call({
     String? code,
     List<double>? exchangeRates,
+    String? countryCode,
     String? description,
   });
 }
@@ -40,6 +43,9 @@ class _$CurrencyCWProxyImpl implements _$CurrencyCWProxy {
       this(exchangeRates: exchangeRates);
 
   @override
+  Currency countryCode(String? countryCode) => this(countryCode: countryCode);
+
+  @override
   Currency description(String? description) => this(description: description);
 
   @override
@@ -53,6 +59,7 @@ class _$CurrencyCWProxyImpl implements _$CurrencyCWProxy {
   Currency call({
     Object? code = const $CopyWithPlaceholder(),
     Object? exchangeRates = const $CopyWithPlaceholder(),
+    Object? countryCode = const $CopyWithPlaceholder(),
     Object? description = const $CopyWithPlaceholder(),
   }) {
     return Currency(
@@ -65,6 +72,10 @@ class _$CurrencyCWProxyImpl implements _$CurrencyCWProxy {
               ? _value.exchangeRates
               // ignore: cast_nullable_to_non_nullable
               : exchangeRates as List<double>,
+      countryCode: countryCode == const $CopyWithPlaceholder()
+          ? _value.countryCode
+          // ignore: cast_nullable_to_non_nullable
+          : countryCode as String?,
       description: description == const $CopyWithPlaceholder()
           ? _value.description
           // ignore: cast_nullable_to_non_nullable
@@ -89,11 +100,13 @@ Currency _$CurrencyFromJson(Map<String, dynamic> json) => Currency(
               ?.map((e) => (e as num).toDouble())
               .toList() ??
           [],
+      countryCode: json['countryCode'] as String? ?? '',
       description: json['description'] as String? ?? '',
     );
 
 Map<String, dynamic> _$CurrencyToJson(Currency instance) => <String, dynamic>{
       'code': instance.code,
+      'countryCode': instance.countryCode,
       'description': instance.description,
       'rates': instance.exchangeRates,
     };

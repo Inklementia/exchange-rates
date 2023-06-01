@@ -19,9 +19,10 @@ class MyRateHelper {
   }
 
   static List<double> generateRandomValues() {
+    // 7 like weekdays
     Random random = Random();
     List<double> randomValues =
-        List.generate(5, (_) => random.nextDouble() * 9 + 1);
+        List.generate(7, (_) => random.nextDouble() * 9 + 1);
     return randomValues;
   }
 }

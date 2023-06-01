@@ -24,6 +24,13 @@ void currencyMiddleware(
       store.dispatch(ErrorCurrenciesAction(error.toString()));
     });
 
+  if (action is UpdateCurrenciesRatesAction)
+    repository.updateAllRates().then((data) {
+      store.dispatch(FetchCurrenciesAction());
+    }).catchError((error) {
+      store.dispatch(ErrorCurrenciesAction(error.toString()));
+    });
+
   if (action is ClearCurrenciesAction) {
     repository.clearCollection().then((data) {
       store.dispatch(PopulateCurrenciesAction(CollectionSeeder.currencies));

@@ -23,7 +23,7 @@ class MyDivider extends StatelessWidget {
     this.hPadding = 0,
     this.thickness = 1,
     //
-    this.color = MyColors.greyLiteA20,
+    this.color = MyColors.grey,
   });
 
   @override

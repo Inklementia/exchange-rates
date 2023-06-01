@@ -11,6 +11,8 @@ class MyText14s extends StatelessWidget {
 
   final Color color;
 
+  final int height;
+
   final int? maxLines;
   final TextAlign? textAlign;
 
@@ -18,9 +20,10 @@ class MyText14s extends StatelessWidget {
 
   MyText14s(
     this.data, {
-    this.color = MyColors.navi,
+    this.color = MyColors.greyDark,
     this.maxLines,
     this.textAlign,
+    this.height = 18,
     this.isOverflow = false,
   });
 
@@ -28,9 +31,9 @@ class MyText14s extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyText(
       data,
-      height: 16,
-      fontSize: 14,
       color: color,
+      fontSize: 14,
+      height: height,
       maxLines: maxLines,
       textAlign: textAlign,
       isOverflow: isOverflow,

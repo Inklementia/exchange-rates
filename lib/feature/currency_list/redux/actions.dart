@@ -2,6 +2,8 @@ import 'package:exchangerates/core/models/currency/currency.dart';
 
 class FetchCurrenciesAction {}
 
+class UpdateCurrenciesRatesAction {}
+
 class UpdateCurrenciesAction {
   final List<Currency> list;
 

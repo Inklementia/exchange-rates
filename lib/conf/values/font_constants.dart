@@ -1,3 +1,3 @@
 abstract class MyFonts {
-  static const main = 'Golos';
+  static const main = 'CircularStd';
 }

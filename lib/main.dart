@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:exchangerates/utils/collection_seeder.dart';
+import 'package:exchangerates/conf/values/system_ui_overlay_style_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -13,10 +13,12 @@ const env = Env.Prod;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  SystemChrome.setSystemUIOverlayStyle(MySystemUiOverlayStyle.light);
 
   await Firebase.initializeApp();
-  FirebaseFirestore.setLoggingEnabled(true);
+  FirebaseFirestore.setLoggingEnabled(false);
 
   await MySPHelper.init();
 

@@ -45,8 +45,8 @@ class CurrencyService {
 
   //
 
-  void fetch() {
-    _store.dispatch(FetchCurrenciesAction());
+  void refreshRates() {
+    _store.dispatch(UpdateCurrenciesRatesAction());
   }
 
   void resetTable() {

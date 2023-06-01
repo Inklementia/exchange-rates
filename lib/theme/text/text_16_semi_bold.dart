@@ -17,7 +17,7 @@ class MyText16s extends StatelessWidget {
 
   MyText16s(
     this.data, {
-    this.color = MyColors.navi,
+    this.color = MyColors.greyDark,
     this.maxLines,
     this.textAlign,
     this.isOverflow = false,

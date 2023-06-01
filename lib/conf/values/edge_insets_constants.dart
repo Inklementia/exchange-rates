@@ -8,15 +8,12 @@ abstract class MyEdgeInsets {
   //
   // All
   //
-  static const all1 = EdgeInsets.all(1);
   static const all2 = EdgeInsets.all(2);
   static const all4 = EdgeInsets.all(4);
   static const all6 = EdgeInsets.all(6);
   static const all8 = EdgeInsets.all(8);
-  static const all11 = EdgeInsets.all(11);
 
   static const all12 = EdgeInsets.all(12);
-  static const all15 = EdgeInsets.all(15);
   static const all16 = EdgeInsets.all(16);
   static const all18 = EdgeInsets.all(18);
   static const all20 = EdgeInsets.all(20);
@@ -53,6 +50,7 @@ abstract class MyEdgeInsets {
   //
   // Only
   //
+
   static const left4 = EdgeInsets.only(left: 4);
   static const left10 = EdgeInsets.only(left: 10);
   static const left16 = EdgeInsets.only(left: 16);
@@ -67,9 +65,6 @@ abstract class MyEdgeInsets {
   static const right12 = EdgeInsets.only(right: 12);
   static const right16 = EdgeInsets.only(right: 16);
   static const right20 = EdgeInsets.only(right: 20);
-
-  static const right10top20 = EdgeInsets.only(right: 10, top: 20);
-  static const right20top20 = EdgeInsets.only(right: 20, top: 20);
 
   static const top2 = EdgeInsets.only(top: 2);
   static const top4 = EdgeInsets.only(top: 4);
@@ -99,8 +94,6 @@ abstract class MyEdgeInsets {
   static const bottom48 = EdgeInsets.only(bottom: 48);
   static const bottom64 = EdgeInsets.only(bottom: 64);
   static const bottom140 = EdgeInsets.only(bottom: 140);
-
-  static const top10bottom20 = EdgeInsets.only(top: 10, bottom: 20);
 
   //
   // h2v
@@ -270,44 +263,4 @@ abstract class MyEdgeInsets {
     horizontal: 26,
     vertical: 30,
   );
-
-  //
-  // Custom
-  //
-
-  static const v5h2 = EdgeInsets.symmetric(vertical: 5, horizontal: 2);
-
-  static const v4h6 = EdgeInsets.symmetric(vertical: 4, horizontal: 6);
-
-  static const v6h8 = EdgeInsets.symmetric(vertical: 6, horizontal: 8);
-
-  static const v3h2 = EdgeInsets.symmetric(vertical: 3, horizontal: 2);
-
-  static const v13h16 = EdgeInsets.symmetric(vertical: 13, horizontal: 16);
-
-  static const h16t16 = EdgeInsets.only(left: 16, right: 16, top: 16);
-
-  static const l16r30v10 =
-      EdgeInsets.only(left: 16, right: 30, top: 10, bottom: 10);
-
-  static const b0other30 = EdgeInsets.only(left: 30, right: 30, top: 30);
-
-  static const b0other20 = EdgeInsets.only(left: 20, right: 20, top: 20);
-
-  static const b0other16 = EdgeInsets.only(left: 16, right: 16, top: 16);
-
-  static const h20t20 = EdgeInsets.only(left: 20, right: 20, top: 20);
-
-  static const bottom64all4 = EdgeInsets.fromLTRB(4, 4, 4, 64);
-
-  static const h40 = EdgeInsets.symmetric(horizontal: 40);
-
-  //
-  static const left76right16 = EdgeInsets.only(left: 76, right: 16);
-
-  static const all16top8 =
-      EdgeInsets.only(top: 8, left: 16, bottom: 16, right: 16);
-
-  static const top5bottom7h18 =
-      EdgeInsets.only(top: 4, right: 16, bottom: 7, left: 18);
 }

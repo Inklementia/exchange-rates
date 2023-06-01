@@ -1,19 +1,25 @@
+import 'package:exchangerates/conf/enums/weekdays_enum.dart';
+
 class MyCurrencyHelper {
   //
-  static String getFlagFromCode(String currencyCode) {
-    int flagOffset = 0x1F1E6;
-    int asciiOffset = 0x41;
 
-    String firstLetter = currencyCode.substring(0, 1).toUpperCase();
-    String secondLetter = currencyCode.substring(1, 2).toUpperCase();
+  static double highestValue(List<double> rates) {
+    return rates.reduce((value, element) => value > element ? value : element);
+  }
 
-    int firstLetterIndex = firstLetter.codeUnitAt(0) - asciiOffset + flagOffset;
-    int secondLetterIndex =
-        secondLetter.codeUnitAt(0) - asciiOffset + flagOffset;
+  static double lowestValue(List<double> rates) {
+    return rates.reduce((value, element) => value < element ? value : element);
+  }
 
-    String flag = String.fromCharCode(firstLetterIndex) +
-        String.fromCharCode(secondLetterIndex);
+  static double avgValue(List<double> rates) {
+    return rates.reduce((sum, element) => sum + element) / rates.length;
+  }
 
-    return flag;
+  static Weekday getWeekdayByIndex(int index) {
+    List<Weekday> weekdays = Weekday.values;
+    if (index >= 0 && index < weekdays.length) {
+      return weekdays[index];
+    }
+    return Weekday.Sunday;
   }
 }

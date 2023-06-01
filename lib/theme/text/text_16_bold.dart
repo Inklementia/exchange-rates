@@ -29,7 +29,7 @@ class MyText16b extends StatelessWidget {
       data,
       height: 20,
       fontSize: 16,
-      color: color ?? MyColors.navi,
+      color: color ?? MyColors.greyDark,
       maxLines: maxLines,
       textAlign: textAlign,
       isOverflow: isOverflow,

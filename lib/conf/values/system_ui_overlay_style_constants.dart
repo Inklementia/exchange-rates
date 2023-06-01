@@ -6,36 +6,16 @@ import 'color_constants.dart';
 
 abstract class MySystemUiOverlayStyle {
   //
-  static const splash = SystemUiOverlayStyle(
+
+  static const light = SystemUiOverlayStyle(
     systemStatusBarContrastEnforced: false,
     statusBarColor: MyColors.transparent,
-    statusBarBrightness: Brightness.dark,
-    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.light,
+    statusBarIconBrightness: Brightness.dark,
     //
-    systemNavigationBarColor: MyColors.primary,
+    systemNavigationBarColor: MyColors.greyLite,
     systemNavigationBarContrastEnforced: false,
-    systemNavigationBarDividerColor: MyColors.primary,
-    systemNavigationBarIconBrightness: Brightness.light,
-  );
-
-  static const lightStatusBar = SystemUiOverlayStyle(
-    systemStatusBarContrastEnforced: false,
-    statusBarColor: MyColors.transparent,
-    statusBarBrightness: Brightness.dark,
-    statusBarIconBrightness: Brightness.light,
-  );
-
-  static const lightNavBar = SystemUiOverlayStyle(
-    systemNavigationBarColor: MyColors.white,
-    systemNavigationBarContrastEnforced: false,
-    systemNavigationBarDividerColor: MyColors.white,
+    systemNavigationBarDividerColor: MyColors.greyLite,
     systemNavigationBarIconBrightness: Brightness.dark,
-  );
-
-  static const darkNavBar = SystemUiOverlayStyle(
-    systemNavigationBarColor: MyColors.greyDark,
-    systemNavigationBarContrastEnforced: false,
-    systemNavigationBarIconBrightness: Brightness.light,
-    systemNavigationBarDividerColor: MyColors.greyDark,
   );
 }

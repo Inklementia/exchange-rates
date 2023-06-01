@@ -6,7 +6,6 @@ import 'package:exchangerates/conf/values/color_constants.dart';
 
 enum MyButtonColor {
   primary,
-  lite,
   secondary,
   red,
   white;
@@ -18,10 +17,8 @@ extension MyButtonColorExtension on MyButtonColor {
     switch (this) {
       case MyButtonColor.primary:
         return MyColors.primary;
-      case MyButtonColor.lite:
-        return MyColors.primaryA10;
       case MyButtonColor.secondary:
-        return MyColors.greyDark;
+        return MyColors.secondary;
       case MyButtonColor.red:
         return MyColors.red;
       case MyButtonColor.white:
@@ -33,14 +30,12 @@ extension MyButtonColorExtension on MyButtonColor {
     switch (this) {
       case MyButtonColor.primary:
         return MyColors.white;
-      case MyButtonColor.lite:
-        return MyColors.primary;
       case MyButtonColor.secondary:
         return MyColors.greyDark;
       case MyButtonColor.red:
         return MyColors.white;
       case MyButtonColor.white:
-        return MyColors.primary;
+        return MyColors.black;
     }
   }
 
@@ -48,10 +43,10 @@ extension MyButtonColorExtension on MyButtonColor {
     switch (this) {
       case MyButtonColor.primary:
         return MyColors.primaryA50;
-      case MyButtonColor.lite:
-        return MyColors.primaryA50;
       case MyButtonColor.secondary:
-        return MyColors.greyDarkA25;
+        return MyColors.greyDark;
+      case MyButtonColor.secondary:
+        return MyColors.greyDarkA50;
       case MyButtonColor.red:
         return MyColors.redA25;
       case MyButtonColor.white:
