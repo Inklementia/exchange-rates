@@ -11,6 +11,7 @@ abstract class MyStrings {
   static String get rateChangeEveryRefresh => 'Rates change every refresh';
   static String get emptyCurrencyList => 'List of currencies is empty';
   static String get settings => 'Settings';
+  static String get trackLocation => 'Track Location';
 
   static String get stats => 'Stats';
 
@@ -18,6 +19,10 @@ abstract class MyStrings {
   static String get high => 'High';
   static String get low => 'Low';
   static String get average => 'Average';
+
+  static String get location => 'Location';
+  static String get locationDesc =>
+      'If the location tracking is on, it tracks your location in both foreground and background when you move for a 100m threshold.';
 
   static String get monday => 'Monday';
   static String get tuesday => 'Tuesday';

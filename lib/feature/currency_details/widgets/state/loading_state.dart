@@ -24,7 +24,7 @@ class CurrencyDetailsLoadingState extends StatelessWidget {
           color: MyColors.greyDark,
         ),
         SizedBox(height: 12),
-        MyShrimmer(height: 90),
+        MyShrimmer(height: 85),
         SizedBox(height: 24),
         MyText18s(
           MyStrings.currency,

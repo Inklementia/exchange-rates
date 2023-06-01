@@ -3,7 +3,6 @@ import 'package:exchangerates/feature/currency_details/mobx/store.dart';
 import 'package:exchangerates/feature/currency_details/widgets/content.dart';
 import 'package:exchangerates/feature/currency_details/widgets/state/loading_state.dart';
 import 'package:exchangerates/theme/default/default_app_bar.dart';
-import 'package:exchangerates/theme/states/loading_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
