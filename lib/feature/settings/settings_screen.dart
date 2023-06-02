@@ -6,12 +6,25 @@ import 'package:exchangerates/theme/default/default_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
   //
   @override
-  Widget build(BuildContext context) {
-    final store = SettingsStore();
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
 
+class _SettingsScreenState extends State<SettingsScreen> {
+  //
+  late SettingsStore store;
+
+  @override
+  void initState() {
+    store = SettingsStore();
+    store.setData();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Provider(
       create: (_) => store,
       child: Scaffold(

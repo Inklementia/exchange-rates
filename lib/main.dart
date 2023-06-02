@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exchangerates/conf/values/system_ui_overlay_style_constants.dart';
+import 'package:exchangerates/location_tracking_task.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -23,6 +24,8 @@ void main() async {
   await MySPHelper.init();
 
   configureDependencies();
+
+  backgroundLocationTask();
 
   runApp(MyApp());
 }

@@ -47,6 +47,10 @@
 		<string>The app tracks the location of the user</string>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string>The app tracks the location of the user</string>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>dev.flutter.background.refresh</string>
+	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>

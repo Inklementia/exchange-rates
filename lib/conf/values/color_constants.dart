@@ -8,7 +8,7 @@ abstract class MyColors {
   //
 
   static const primary = Color(0xFF0524f3);
-  static const primaryLite = Color(0xFF4797EE);
+  static const primaryLite = Color(0xFF8D9CFF);
 
   static const primaryA50 = Color(0x800524f3);
   static const primaryA25 = Color(0x400524f3);

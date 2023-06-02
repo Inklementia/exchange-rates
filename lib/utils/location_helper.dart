@@ -2,36 +2,18 @@
 import 'dart:math';
 
 // Package imports:
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:location/location.dart';
 import 'package:rxdart/rxdart.dart';
 
 class MyLocationHelper {
   //
-  static final _myLocation = BehaviorSubject<LocationData?>();
-  static BehaviorSubject<LocationData?> get myLocation$ => _myLocation;
-  static LocationData? get myLocation => myLocation$.valueOrNull;
 
-  //
-
-  static Future<LocationData> getLocation() async {
-    if (myLocation != null) {
-      Location.instance.getLocation().then((position) {
-        final latLang = LocationData.fromMap({
-          'latitude': position.latitude,
-          'longitude': position.longitude,
-        });
-        _myLocation.add(latLang);
-      });
-      return myLocation!;
-    } else {
-      final position = await Location.instance.getLocation();
-      final latLang = LocationData.fromMap({
-        'latitude': position.latitude,
-        'longitude': position.longitude,
-      });
-      _myLocation.add(latLang);
-      return latLang;
-    }
+  static LocationData geoPointToLocationData(GeoPoint geoPoint) {
+    return LocationData.fromMap({
+      'latitude': geoPoint.latitude,
+      'longitude': geoPoint.longitude,
+    });
   }
 
   static double distance(LocationData startLocation, LocationData endLocation) {

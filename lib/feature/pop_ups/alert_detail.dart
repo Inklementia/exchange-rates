@@ -38,10 +38,10 @@ class AlertDetail extends StatelessWidget {
       child: MyGestureDetector(
         onTap: onTap,
         child: MyContainer(
-          color: type.color,
+          color: MyColors.white,
           margin: MyEdgeInsets.h16,
           padding: MyEdgeInsets.all16,
-          border: Border.all(color: type.borderColor),
+          border: Border.all(color: type.borderColor, width: 1),
           borderRadius: MyBorderRadius.allRounded10,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,6 +49,7 @@ class AlertDetail extends StatelessWidget {
               MyIcon(
                 size: 24,
                 icon: type.icon,
+                color: type.color,
               ),
               SizedBox(width: 12),
               Expanded(

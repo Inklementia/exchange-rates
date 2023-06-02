@@ -14,6 +14,9 @@ abstract class MyStrings {
   static String get trackLocation => 'Track Location';
   static String get noPermissionToUseLocation =>
       'No permission to use location';
+  static String get locationServiceRequired => 'Location service required';
+  static String get locationTrackingStarted => 'Location tracking started';
+  static String get locationTrackingStopped => 'Location tracking stopped';
 
   static String get stats => 'Stats';
 

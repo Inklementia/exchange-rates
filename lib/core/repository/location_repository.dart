@@ -2,7 +2,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exchangerates/conf/api/collection_constants.dart';
 import 'package:exchangerates/core/models/location/location.dart';
+import 'package:exchangerates/utils/location_helper.dart';
 import 'package:injectable/injectable.dart';
+import 'package:location/location.dart';
 
 @injectable
 class LocationRepository {
@@ -10,14 +12,21 @@ class LocationRepository {
   final CollectionReference _locationCollection =
       FirebaseFirestore.instance.collection(MyCollections.locations);
   //
-  Future<MyLocation> fetchLast() async {
-    QuerySnapshot snapshot = await _locationCollection.get();
+  Future<LocationData?> fetchLastLocation() async {
+    final querySnapshot = await _locationCollection
+        .orderBy('timestamp', descending: true)
+        .limit(1)
+        .get();
 
-    List<MyLocation> list = await snapshot.docs
-        .map((doc) => MyLocation.fromJson(doc.data() as Map<String, dynamic>))
-        .toList();
+    if (querySnapshot.docs.isNotEmpty) {
+      final geoPoint = querySnapshot.docs.first.data() as Map<String, dynamic>;
+      return LocationData.fromMap({
+        'latitude': geoPoint['location'].latitude,
+        'longitude': geoPoint['location'].longitude,
+      });
+    }
 
-    return list.last;
+    return null;
   }
 
   Future<void> addNewLocation(double latitude, double longitude) async {
