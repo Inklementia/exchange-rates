@@ -1,9 +1,11 @@
 // Flutter imports:
-import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:flutter_svg/flutter_svg.dart';
+
+// Project imports:
+import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 
 // Project imports:
 

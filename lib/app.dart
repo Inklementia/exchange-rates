@@ -1,4 +1,7 @@
 // Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/font_constants.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
@@ -7,7 +10,6 @@ import 'package:exchangerates/core/navigator/routes_constants.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/utils/media_helper.dart';
 import 'package:exchangerates/utils/my_scroll_behavior.dart';
-import 'package:flutter/material.dart';
 
 // Project imports:
 

@@ -1,3 +1,11 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:provider/provider.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
@@ -9,9 +17,6 @@ import 'package:exchangerates/theme/items/item_country.dart';
 import 'package:exchangerates/theme/text/text_14.dart';
 import 'package:exchangerates/theme/text/text_18_semi_bold.dart';
 import 'package:exchangerates/utils/currency_helper.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:provider/provider.dart';
 
 class CurrencyDetailsContent extends StatelessWidget {
   //

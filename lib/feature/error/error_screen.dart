@@ -1,8 +1,10 @@
 // Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:exchangerates/theme/default/default_app_bar.dart';
 import 'package:exchangerates/theme/text/text_16_medium.dart';
-import 'package:flutter/material.dart';
 
 class ErrorScreen extends StatelessWidget {
   //

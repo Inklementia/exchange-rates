@@ -1,11 +1,16 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:fl_chart/fl_chart.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/enums/weekdays_enum.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/feature/currency_details/widgets/chart/label.dart';
 import 'package:exchangerates/theme/text/text_14.dart';
 import 'package:exchangerates/utils/currency_helper.dart';
-import 'package:fl_chart/fl_chart.dart';
-import 'package:flutter/material.dart';
 
 class CurrencyDetailsChart extends StatelessWidget {
   //

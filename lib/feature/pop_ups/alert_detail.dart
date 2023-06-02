@@ -1,4 +1,7 @@
 // Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/assets/icon_constants.dart';
 import 'package:exchangerates/conf/enums/alert_type_enum.dart';
 import 'package:exchangerates/conf/values/border_radius_constants.dart';
@@ -9,7 +12,6 @@ import 'package:exchangerates/theme/default/default_gesture.dart';
 import 'package:exchangerates/theme/default/default_icon.dart';
 import 'package:exchangerates/theme/text/text_14.dart';
 import 'package:exchangerates/theme/text/text_16_medium.dart';
-import 'package:flutter/material.dart';
 
 class AlertDetail extends StatelessWidget {
   //

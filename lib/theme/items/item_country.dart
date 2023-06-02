@@ -1,6 +1,11 @@
-import 'package:country_flags/country_flags.dart';
-import 'package:exchangerates/theme/text/text_14_semi_bold.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:country_flags/country_flags.dart';
+
+// Project imports:
+import 'package:exchangerates/theme/text/text_14_semi_bold.dart';
 
 class CurrencyCountry extends StatelessWidget {
   //

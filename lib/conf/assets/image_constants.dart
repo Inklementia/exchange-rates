@@ -1,3 +1,4 @@
+// Project imports:
 import 'package:exchangerates/conf/assets/assets_contstants.dart';
 
 abstract class MyImages {

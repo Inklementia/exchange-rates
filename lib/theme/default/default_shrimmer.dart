@@ -1,13 +1,13 @@
 // Flutter imports:
-import 'package:exchangerates/conf/values/border_radius_constants.dart';
-import 'package:exchangerates/theme/default/default_container.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:shimmer/shimmer.dart';
 
 // Project imports:
+import 'package:exchangerates/conf/values/border_radius_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
+import 'package:exchangerates/theme/default/default_container.dart';
 
 class MyShrimmer extends StatelessWidget {
   //

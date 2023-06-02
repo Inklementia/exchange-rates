@@ -1,4 +1,7 @@
 // Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/assets/icon_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
@@ -7,8 +10,6 @@ import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/theme/text/text_18_semi_bold.dart';
 import 'package:exchangerates/utils/media_helper.dart';
-import 'package:flutter/material.dart';
-
 import 'default_icon.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {

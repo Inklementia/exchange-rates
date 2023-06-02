@@ -1,8 +1,10 @@
 // Package imports:
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:exchangerates/conf/api/collection_constants.dart';
 import 'package:injectable/injectable.dart';
 import 'package:location/location.dart';
+
+// Project imports:
+import 'package:exchangerates/conf/api/collection_constants.dart';
 
 @injectable
 class LocationRepository {

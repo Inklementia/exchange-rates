@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
+import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 
 class MyProgressIndicator extends StatelessWidget {
   //

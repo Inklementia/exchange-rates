@@ -1,3 +1,4 @@
+// Project imports:
 import 'package:exchangerates/core/models/currency/currency.dart';
 
 class FetchCurrenciesAction {}

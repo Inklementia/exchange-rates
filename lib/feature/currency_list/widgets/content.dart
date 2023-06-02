@@ -1,3 +1,7 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:exchangerates/core/models/currency/currency.dart';
@@ -7,7 +11,6 @@ import 'package:exchangerates/feature/currency_list/widgets/items/item.dart';
 import 'package:exchangerates/feature/currency_list/widgets/list/list_header.dart';
 import 'package:exchangerates/theme/default/default_refresher.dart';
 import 'package:exchangerates/theme/states/empty_state.dart';
-import 'package:flutter/material.dart';
 
 class CurrencyListContent extends StatelessWidget {
   //

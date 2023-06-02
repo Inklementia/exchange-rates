@@ -1,6 +1,9 @@
+// Flutter imports:
+import 'package:flutter/widgets.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/feature/settings/widgets/location/location_item.dart';
-import 'package:flutter/widgets.dart';
 
 class SettingsContent extends StatelessWidget {
   //

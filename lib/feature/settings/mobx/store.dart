@@ -1,14 +1,14 @@
 // Package imports:
 import 'package:app_settings/app_settings.dart';
-import 'package:exchangerates/conf/values/strings_constants.dart';
-import 'package:exchangerates/utils/background_service_helper.dart';
-import 'package:exchangerates/core/root/injector.dart';
-import 'package:exchangerates/core/root/navigator_service.dart';
-import 'package:exchangerates/utils/shared_preference_helper.dart';
+import 'package:location/location.dart';
 import 'package:mobx/mobx.dart';
 
 // Project imports:
-import 'package:location/location.dart';
+import 'package:exchangerates/conf/values/strings_constants.dart';
+import 'package:exchangerates/core/root/injector.dart';
+import 'package:exchangerates/core/root/navigator_service.dart';
+import 'package:exchangerates/utils/background_service_helper.dart';
+import 'package:exchangerates/utils/shared_preference_helper.dart';
 
 part 'store.g.dart';
 

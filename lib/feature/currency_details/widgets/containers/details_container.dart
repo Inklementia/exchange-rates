@@ -1,9 +1,12 @@
+// Flutter imports:
+import 'package:flutter/cupertino.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/border_radius_constants.dart';
 import 'package:exchangerates/conf/values/box_shadows_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/theme/default/default_container.dart';
-import 'package:flutter/cupertino.dart';
 
 class CurrencyDetailsContainer extends StatelessWidget {
   //

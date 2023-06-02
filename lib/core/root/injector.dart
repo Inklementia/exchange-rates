@@ -1,6 +1,8 @@
 // Package imports:
-import 'package:injectable/injectable.dart';
 import 'package:get_it/get_it.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'injector.config.dart';
 
 final injector = GetIt.instance;

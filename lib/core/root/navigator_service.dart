@@ -1,17 +1,17 @@
 // Flutter imports:
-import 'package:exchangerates/conf/enums/alert_type_enum.dart';
-import 'package:exchangerates/conf/values/duration_constants.dart';
-import 'package:exchangerates/feature/pop_ups/alert_detail.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 // Package imports:
-import 'package:injectable/injectable.dart';
 import 'package:flash/flash.dart';
+import 'package:injectable/injectable.dart';
 
 // Project imports:
+import 'package:exchangerates/conf/enums/alert_type_enum.dart';
 import 'package:exchangerates/conf/values/border_radius_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
+import 'package:exchangerates/conf/values/duration_constants.dart';
+import 'package:exchangerates/feature/pop_ups/alert_detail.dart';
 
 @singleton
 class NavigatorService {

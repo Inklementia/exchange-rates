@@ -1,9 +1,12 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:exchangerates/feature/currency_list/widgets/buttons/refresh_button.dart';
 import 'package:exchangerates/feature/currency_list/widgets/buttons/settings_button.dart';
 import 'package:exchangerates/theme/default/default_app_bar.dart';
 import 'package:exchangerates/utils/media_helper.dart';
-import 'package:flutter/material.dart';
 
 class CurrencyListAppBar extends StatelessWidget
     implements PreferredSizeWidget {

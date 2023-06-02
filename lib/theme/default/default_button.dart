@@ -2,13 +2,13 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:exchangerates/conf/values/border_radius_constants.dart';
-import 'package:exchangerates/conf/values/edge_insets_constants.dart';
-import 'package:exchangerates/conf/values/duration_constants.dart';
 import 'package:exchangerates/conf/enums/button_colors_enum.dart';
+import 'package:exchangerates/conf/values/border_radius_constants.dart';
+import 'package:exchangerates/conf/values/duration_constants.dart';
+import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/theme/text/text_16_medium.dart';
-import 'default_progress_indicator.dart';
 import 'default_inkwell.dart';
+import 'default_progress_indicator.dart';
 
 class MyButton extends StatelessWidget {
   //

@@ -1,3 +1,8 @@
+// Flutter imports:
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/assets/icon_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
@@ -5,8 +10,6 @@ import 'package:exchangerates/core/navigator/routes_constants.dart';
 import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/theme/default/default_icon.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class CurrencyListSettingsButton extends StatelessWidget {
   //

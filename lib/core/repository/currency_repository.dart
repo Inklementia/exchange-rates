@@ -1,9 +1,11 @@
 // Package imports:
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/api/collection_constants.dart';
 import 'package:exchangerates/core/models/currency/currency.dart';
 import 'package:exchangerates/utils/rate_helper.dart';
-import 'package:injectable/injectable.dart';
 
 @injectable
 class CurrencyRepository {

@@ -1,10 +1,10 @@
 // Flutter imports:
-import 'package:exchangerates/conf/assets/icon_constants.dart';
-import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:flutter/material.dart';
 
 // Project imports:
+import 'package:exchangerates/conf/assets/icon_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
+import 'package:exchangerates/conf/values/strings_constants.dart';
 
 enum AlertType {
   Error,

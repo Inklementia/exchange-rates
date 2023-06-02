@@ -1,3 +1,4 @@
+// Project imports:
 import 'package:exchangerates/conf/values/strings_constants.dart';
 
 enum Weekday {

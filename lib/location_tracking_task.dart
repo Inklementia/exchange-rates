@@ -1,9 +1,14 @@
+// Dart imports:
 import 'dart:async';
+
+// Package imports:
+import 'package:location/location.dart';
+
+// Project imports:
 import 'package:exchangerates/core/repository/location_repository.dart';
 import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/utils/background_service_helper.dart';
 import 'package:exchangerates/utils/location_helper.dart';
-import 'package:location/location.dart';
 
 void backgroundLocationTask() {
   //

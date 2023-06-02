@@ -1,12 +1,15 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:redux/redux.dart';
+
+// Project imports:
 import 'package:exchangerates/core/navigator/routes_constants.dart';
 import 'package:exchangerates/core/repository/currency_repository.dart';
 import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/utils/collection_seeder.dart';
-import 'package:flutter/material.dart';
-
-import 'package:redux/redux.dart';
-
 import 'actions.dart';
 import 'store.dart';
 

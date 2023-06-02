@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 // Package imports:
-import 'package:rxdart/rxdart.dart';
 import "package:redux/redux.dart";
+import 'package:rxdart/rxdart.dart';
 
 class ObservableState {
   //

@@ -23,6 +23,7 @@ dependencies:
   app_settings: ^4.2.0
   circle_flags: ^1.0.3
   country_flags: ^1.0.0
+  import_sorter: ^4.6.0
   pull_to_refresh: ^2.0.0
   cupertino_icons: ^1.0.2
   json_annotation: ^4.7.0

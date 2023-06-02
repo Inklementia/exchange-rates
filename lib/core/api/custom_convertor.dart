@@ -1,6 +1,10 @@
+// Dart imports:
 import 'dart:async';
 
+// Package imports:
 import 'package:chopper/chopper.dart';
+
+// Project imports:
 import 'package:exchangerates/core/models/currency/currency.dart';
 import 'package:exchangerates/core/models/location/location.dart';
 

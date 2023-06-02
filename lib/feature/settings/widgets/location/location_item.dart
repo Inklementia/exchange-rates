@@ -1,9 +1,12 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:exchangerates/feature/settings/widgets/location/location_toggle.dart';
 import 'package:exchangerates/theme/text/text_14.dart';
 import 'package:exchangerates/theme/text/text_16_medium.dart';
-import 'package:flutter/material.dart';
 
 class SettingsLocationItem extends StatelessWidget {
   //

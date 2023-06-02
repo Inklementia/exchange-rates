@@ -1,11 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/color_constants.dart';
+import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/feature/currency_list/redux/service.dart';
 import 'package:exchangerates/feature/currency_list/widgets/app_bar/app_bar.dart';
 import 'package:exchangerates/feature/currency_list/widgets/content.dart';
 import 'package:exchangerates/theme/states/loading_state.dart';
-import 'package:flutter/material.dart';
-
-import 'package:exchangerates/core/root/injector.dart';
 
 class CurrencyListScreen extends StatelessWidget {
   //

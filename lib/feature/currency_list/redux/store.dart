@@ -1,7 +1,9 @@
-import 'package:exchangerates/core/models/currency/currency.dart';
-import 'package:exchangerates/core/root/observable_store.dart';
+// Package imports:
 import 'package:injectable/injectable.dart';
 
+// Project imports:
+import 'package:exchangerates/core/models/currency/currency.dart';
+import 'package:exchangerates/core/root/observable_store.dart';
 import 'middleware.dart';
 import 'reducers.dart';
 

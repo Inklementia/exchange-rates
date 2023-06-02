@@ -1,9 +1,12 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/color_constants.dart';
 import 'package:exchangerates/conf/values/edge_insets_constants.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
 import 'package:exchangerates/theme/default/default_shrimmer.dart';
 import 'package:exchangerates/theme/text/text_18_semi_bold.dart';
-import 'package:flutter/material.dart';
 
 class CurrencyDetailsLoadingState extends StatelessWidget {
   //

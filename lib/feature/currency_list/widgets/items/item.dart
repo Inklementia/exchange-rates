@@ -1,3 +1,7 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:exchangerates/conf/values/border_radius_constants.dart';
 import 'package:exchangerates/conf/values/box_shadows_constants.dart';
 import 'package:exchangerates/conf/values/color_constants.dart';
@@ -9,7 +13,6 @@ import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/theme/default/default_inkwell.dart';
 import 'package:exchangerates/theme/items/item_country.dart';
 import 'package:exchangerates/theme/text/text_14.dart';
-import 'package:flutter/material.dart';
 
 class CurrecyItem extends StatelessWidget {
   //
