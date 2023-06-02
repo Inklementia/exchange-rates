@@ -1,14 +1,10 @@
 // Package imports:
 import 'package:app_settings/app_settings.dart';
-import 'package:exchangerates/conf/enums/alert_type_enum.dart';
 import 'package:exchangerates/conf/values/strings_constants.dart';
-import 'package:exchangerates/core/repository/location_repository.dart';
-import 'package:exchangerates/location_tracking_task.dart';
 import 'package:exchangerates/utils/background_service_helper.dart';
 import 'package:exchangerates/core/root/injector.dart';
 import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/utils/shared_preference_helper.dart';
-import 'package:flutter_background_service/flutter_background_service.dart';
 import 'package:mobx/mobx.dart';
 
 // Project imports:

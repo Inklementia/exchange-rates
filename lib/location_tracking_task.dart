@@ -1,8 +1,6 @@
 import 'dart:async';
-import 'package:exchangerates/core/models/location/location.dart';
 import 'package:exchangerates/core/repository/location_repository.dart';
 import 'package:exchangerates/core/root/injector.dart';
-import 'package:exchangerates/core/root/navigator_service.dart';
 import 'package:exchangerates/utils/background_service_helper.dart';
 import 'package:exchangerates/utils/location_helper.dart';
 import 'package:location/location.dart';

@@ -4,7 +4,6 @@ import 'dart:math';
 // Package imports:
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:location/location.dart';
-import 'package:rxdart/rxdart.dart';
 
 class MyLocationHelper {
   //
